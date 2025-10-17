@@ -30,7 +30,7 @@ module.exports = async function handler(req, res) {
     )
     
     await supabase
-      .from('subscribers')
+      .from('email_subscriptions')
       .delete()
       .eq('email', email.toLowerCase().trim())
     
