@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/unsubscribe.py": {
+      "runtime": "python3.9"
+    }
+  }
+}
