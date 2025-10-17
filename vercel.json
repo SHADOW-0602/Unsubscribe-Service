@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/unsubscribe.py": {
-      "runtime": "python3.9@3.9.16"
+      "runtime": "@vercel/python"
     }
   }
 }
