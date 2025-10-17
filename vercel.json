@@ -1,6 +1,5 @@
 {
   "rewrites": [
-    { "source": "/unsubscribe", "destination": "/api/unsubscribe" },
-    { "source": "/", "destination": "/api/unsubscribe" }
+    { "source": "/unsubscribe", "destination": "/api/unsubscribe" }
   ]
 }
