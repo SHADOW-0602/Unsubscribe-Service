@@ -1,5 +1,1 @@
-{
-  "rewrites": [
-    { "source": "/unsubscribe", "destination": "/api/unsubscribe" }
-  ]
-}
+{}
