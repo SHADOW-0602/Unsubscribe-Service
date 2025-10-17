@@ -1,6 +1,7 @@
 import { createClient } from '@supabase/supabase-js'
 
 export default async function handler(req, res) {
+  console.log('Query params:', req.query)
   const { email } = req.query
   
   if (!email) {
@@ -9,6 +10,7 @@ export default async function handler(req, res) {
       <html><body>
         <h2>Invalid Link</h2>
         <p>Missing email address</p>
+        <p>Debug: ${JSON.stringify(req.query)}</p>
       </body></html>
     `)
   }
