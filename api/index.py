@@ -7,7 +7,7 @@ class handler(BaseHTTPRequestHandler):
     def do_GET(self):
         url = urlparse(self.path)
         
-        if url.path == '/unsubscribe':
+        if url.path == '/unsubscribe' or 'email=' in url.query:
             params = parse_qs(url.query)
             email = params.get('email', [''])[0].strip().lower() if params.get('email') else ''
             
