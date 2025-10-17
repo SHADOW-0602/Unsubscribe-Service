@@ -1,6 +1,6 @@
-import { createClient } from '@supabase/supabase-js'
+const { createClient } = require('@supabase/supabase-js')
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   console.log('Query params:', req.query)
   const { email } = req.query
   
